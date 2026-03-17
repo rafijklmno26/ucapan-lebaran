@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(135deg, #e0fffa 0%, #f8ffe4 100%);
+  font-family: 'Segoe UI', 'Nunito', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 28px rgba(52,168,83, 0.14), 0 2px 8px rgba(0,128,64, 0.07);
+  padding: 36px 30px 30px 30px;
+  max-width: 430px;
+  text-align: center;
+  position: relative;
+  animation: fadeInCard 1.4s 0.2s both;
+}
+@keyframes fadeInCard { 
+  from { opacity:0; transform: translateY(44px);}
+  to { opacity:1; transform: translateY(0);}
+}
+.lebaran-img {
+  width: 108px;
+  margin-bottom: 18px;
+  animation: shake 2.5s infinite;
+}
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg);}
+  13% { transform: rotate(-3deg);}
+  26% { transform: rotate(2deg);}
+  39% { transform: rotate(-2deg);}
+  52% { transform: rotate(1.5deg);}
+  65% { transform: rotate(-2.2deg);}
+  78% { transform: rotate(2deg);}
+  91% { transform: rotate(-2deg);}
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+@keyframes fadeIn {
+  0%   { opacity: 0;}
+  100% { opacity: 1;}
+}
+.ucapan {
+  color: #333;
+  font-size: 1.14em;
+  margin: 28px 0 26px 0;
+  line-height: 1.7;
+  min-height: 108px;
+  max-width: 96vw;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.01em;
+  text-align: center;
+  white-space: pre-line;
+}
+.footer {
+  color: #666;
+  font-size: 1em;
+  margin: 0;
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 20px 6px 24px 6px;
+    max-width: 99vw;
+  }
+  .lebaran-img { width: 74px;}
+  .ucapan { font-size: 1em;}
+}
